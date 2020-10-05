@@ -11,7 +11,6 @@ const SlicemasterGrid = styled.div`
 `;
 
 const SingleSlicemasterPage = ({ data }) => {
-  console.log(data);
   const { slicemaster } = data;
 
   return (

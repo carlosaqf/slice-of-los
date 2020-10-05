@@ -62,27 +62,20 @@ const LogoStyles = styled.div`
     display: inline-block;
     line-height: 1;
     transition: transform 0.3s;
-    &.S {
-      --translateX: -0.05;
-    }
+
     &.l {
-      --rotate: 2deg;
-      --scale: 1.4;
+      --rotate: 10deg;
+      --scale: 1.5;
       --translateX: 0.05em;
       --translateY: -0.05em;
     }
-    &.i {
-      --scale: 0.9;
-      --translateY: -0.1em;
-      --translateX: 0.1em;
-    }
-    &.c {
+    &.o {
       --rotate: 3deg;
       --scale: 0.9;
       --translateX: 0.1em;
       --translateY: 0.23em;
     }
-    &.k {
+    &.first-s {
       --rotate: -12deg;
       --scale: 1.2;
       --translateX: 0.06em;
@@ -105,11 +98,9 @@ export default function Logo() {
         <span className="est">EST 1994</span>
         <h1>
           <span className="slicks">
-            <span className="letter S">S</span>
             <span className="letter l">l</span>
-            <span className="letter i">i</span>
-            <span className="letter c">c</span>
-            <span className="letter k">k</span>
+            <span className="letter o">o</span>
+            <span className="letter first-s">s</span>
             <span className="letter apos">'</span>
             <span className="letter s">s</span>
           </span>

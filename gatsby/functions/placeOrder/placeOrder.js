@@ -35,7 +35,6 @@ const transporter = nodemailer.createTransport({
 
 exports.handler = async (event, context) => {
   const body = JSON.parse(event.body);
-  console.log(body);
   if (body.finadenne) {
     return {
       statusCode: 400,
@@ -47,7 +46,6 @@ exports.handler = async (event, context) => {
   const requiredFields = ['email', 'name', 'order'];
 
   for (const field of requiredFields) {
-    console.log(`checking that ${field} is good`);
     if (!body[field]) {
       return {
         statusCode: 400,
